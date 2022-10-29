@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron&family=Electrolize&display=swap">
+</head>
+<body>
+    <div class="calculator">
+        <div class="header">
+            <span><img src="logo.png" alt="logo"></span>
+            <span>CALCULATOR</span>
+        </div>
+        <input type="text" placeholder="0" onkeypress="return false" id="LCD">
+        <table class="buttons">
+            <tr>
+                <td onclick="display('7')">7</td>
+                <td onclick="display('8')">8</td>
+                <td onclick="display('9')">9</td>
+                <td onclick="display('+')">+</td>
+                <td class="size" onclick="allClear()">AC</td>
+            </tr>
+            <tr>
+                <td onclick="display('4')">4</td>
+                <td onclick="display('5')">5</td>
+                <td onclick="display('6')">6</td>
+                <td onclick="display('-')">-</td>
+                <td class="size" onclick="remove()">DEL</td>
+            </tr>
+            <tr>
+                <td onclick="display('1')">1</td>
+                <td onclick="display('2')">2</td>
+                <td onclick="display('3')">3</td>
+                <td onclick="display('*')">*</td>
+                <td rowspan="2" class="length" onclick="assign()">=</td>
+            </tr>
+            <tr>
+                <td onclick="display('.')">.</td>
+                <td onclick="display('0')">0</button></td>
+                <td onclick="display('%')">%</button></td>
+                <td onclick="display('/')">/</button></td>
+            </tr>
+        </div>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>
